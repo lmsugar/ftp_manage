@@ -1,0 +1,19 @@
+{% extends 'learning_logs/base.html' %}
+{% load bootstrap3 %}
+
+{% block header %}
+ <h2>你要做哪些操作，请直接点击进入</h2>
+{% endblock header %}
+
+{% block content %}
+  
+  <ul>
+ 
+	  <li> <h3><a href="{% url 'learning_logs:topics' %}">进入个人文件夹<h3></a></li>
+	  <li> <h3><a href="{% url 'learning_logs:topics' %}">进入公共文件夹<h3></a></li>
+	  <li> <h3><a href="{% url 'learning_logs:topics' %}">进入项目管理文件夹<h3></a></li>
+	  <li> <h3><a href="ftp://10.193.114.252:81/localuser/%D3%B0%D2%F4%D3%E9%C0%D6/">进入影音娱乐文件夹<h3></a></li>
+
+  </ul>
+
+{% endblock content %}

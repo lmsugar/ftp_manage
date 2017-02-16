@@ -1,0 +1,26 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block header %}
+
+
+  <div class='jumbotron'>
+    <h1>集成中心FTP登录管理系统</h1>
+    <h2>Integrated Center FTP Login Management System</h2>
+  </div>
+{% endblock header %}
+
+{% block content %}
+
+  <h2>
+    如果您是本中心员工，您可以<a href="{% url 'users:register' %}">注册一个账户</a> 来登录下载FTP文件、查看项目内容！
+  </h2>
+  <h2>
+   另外，请不要随意删改公共文件。登录后您的所有行为都将被记录！
+  </h2>
+
+
+{% endblock content %}
+
+
+<!DOCTYPE html>
+
