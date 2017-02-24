@@ -9,10 +9,10 @@
   
   <ul>
  
-	  <li> <h3><a href="{% url 'learning_logs:topics' %}">进入个人文件夹<h3></a></li>
-	  <li> <h3><a href="{% url 'learning_logs:topics' %}">进入公共文件夹<h3></a></li>
-	  <li> <h3><a href="{% url 'learning_logs:topics' %}">进入项目管理文件夹<h3></a></li>
-	  <li> <h3><a href="ftp://10.193.114.252:81/localuser/%D3%B0%D2%F4%D3%E9%C0%D6/">进入影音娱乐文件夹<h3></a></li>
+	  <li> <h3><a href="ftp://{{ user.username }}:{{ user.username }}@10.193.114.252:2121">进入个人文件夹<h3></a></li>
+	  <li> <h3><a href="ftp://public:public@10.193.114.252:2121">进入公共文件夹<h3></a></li>
+	  <li> <h3><a href="ftp://10.193.114.252:2121">进入项目文件夹（查看）<h3></a></li>
+	  <li> <h3><a href="ftp://entertainment:entertainment@10.193.114.252:2121">进入影音娱乐文件夹<h3></a></li>
 
   </ul>
 
